@@ -1,5 +1,6 @@
 body {
-  font-family: 'Gothic L', sans-serif;
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 1.5;
 }
 
 .container {
@@ -26,7 +27,7 @@ body {
 }
 
 .head {
-  background-image: url("/img/1section.png");
+  background-image: url("./img/1section.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -119,21 +120,28 @@ body {
   position: relative;
 }
 
-.menu__item:hover::after {
+.menu__item::after {
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+  width: 0;
   content: '';
   position: absolute;
   height: 30%;
   left: 0;
   right: 0;
-  bottom: -185%;
+  bottom: -180%;
   background: #11749e;
 }
 
 @media screen and (max-width: 650px) {
-  .menu__item:hover::after {
+  .menu__item::after {
     bottom: -40%;
     height: 20%;
   }
+}
+
+.menu__item:hover::after {
+  width: 100%;
 }
 
 .menu__social {
@@ -238,7 +246,7 @@ body {
   font-size: 14em;
   color: #3c8daf;
   z-index: 1;
-  top: 80px;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -280,7 +288,6 @@ body {
   font-size: 1em;
   font-weight: 300;
   letter-spacing: 0.02em;
-  line-height: 1.5;
 }
 
 .feutures__picture {
@@ -377,11 +384,11 @@ body {
 }
 
 .tasks__picture:nth-child(1) {
-  background-image: url("/img/tasks-1.png");
+  background-image: url("./img/tasks-1.png");
 }
 
 .tasks__picture:nth-child(2) {
-  background-image: url("/img/tasks-2.png");
+  background-image: url("./img/tasks-2.png");
 }
 
 .blog {
@@ -417,7 +424,7 @@ body {
   font-size: 14em;
   color: #d7d7d7;
   z-index: 1;
-  top: 80px;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -459,7 +466,6 @@ body {
   font-size: 0.95em;
   font-weight: 300;
   letter-spacing: 0.02em;
-  line-height: 1.5;
 }
 
 .blog__picture {
@@ -520,7 +526,6 @@ body {
 }
 
 .notes__note p {
-  line-height: 1.5;
   padding: 0px 20px 0px 30px;
   color: #ffffff;
   font-size: 1.1em;
@@ -528,7 +533,7 @@ body {
 
 .example {
   height: 100vh;
-  background-image: url("/img/exampleback.png");
+  background-image: url("./img/exampleback.png");
   color: #ffffff;
   padding: 0px 10px 0px 10px;
   display: -webkit-box;
@@ -568,10 +573,6 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   font-size: 1.4em;
-}
-
-.example__infoblock p {
-  line-height: 1.5;
 }
 
 .example__advantage {
@@ -642,7 +643,7 @@ body {
   font-size: 14em;
   color: #d7d7d7;
   z-index: 1;
-  top: 80px;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -720,12 +721,11 @@ body {
   font-size: 0.95em;
   font-weight: 300;
   letter-spacing: 0.02em;
-  line-height: 1.5;
 }
 
 .form {
   position: relative;
-  background-image: url("/img/backform.png");
+  background-image: url("./img/backform.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 50px;
@@ -748,7 +748,7 @@ body {
   font-size: 5em;
   color: rgba(215, 215, 215, 0.212);
   z-index: 1;
-  top: 60px;
+  top: 10px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -845,7 +845,7 @@ body {
 }
 
 .map {
-  background-image: url("/img/map.png");
+  background-image: url("./img/map.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 357px;
